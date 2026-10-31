@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - uses: actions/checkout@v4
       - name: Fetch the channel archive
         run: |
           set -euo pipefail
@@ -22,17 +23,21 @@ jobs:
             https://canalpeer.com/api/descriptors
           grep -qi '^content-encoding: gzip' headers
           new=$(gzip -dc descriptors.json.gz | jq '[.items[].seq] | max // 0')
-          old=$(curl -fsS "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/mirror/descriptors.json.gz" \
-            | gzip -dc | jq '[.items[].seq] | max // 0' || echo 0)
+          old=$(curl -fsS "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/mirror/seq.txt" || echo 0)
           echo "site=$new mirror=$old"
           # Never roll the mirror back, and skip a push when nothing changed.
           if [ "$new" -gt "$old" ]; then echo "publish=1" >> "$GITHUB_ENV"; fi
       - name: Publish as a single commit
         if: env.publish == '1'
+        env:
+          MIRROR_KEY: ${{ secrets.MIRROR_KEY }}
         run: |
           set -euo pipefail
-          mkdir out && mv descriptors.json.gz out/ && cd out
+          mkdir out
+          go run tools/seal.go < descriptors.json.gz > out/data.bin
+          gzip -dc descriptors.json.gz | jq '[.items[].seq] | max // 0' > out/seq.txt
+          cd out
           git init -q -b mirror
-          git add descriptors.json.gz
-          git -c user.name=canalpeer -c user.email=canalpeer@users.noreply.github.com commit -q -m "Channel archive"
+          git add data.bin seq.txt
+          git -c user.name=canalpeer -c user.email=canalpeer@users.noreply.github.com commit -q -m "Data"
           git push -qf "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git" mirror

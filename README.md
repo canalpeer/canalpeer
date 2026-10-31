@@ -1,4 +1,4 @@
 # CanalPeer
 
-Public data for CanalPeer apps. The `mirror` branch holds a copy of the
-channel archive, refreshed every hour.
+- Downloads: [Releases](https://github.com/canalpeer/canalpeer/releases).
+- The `mirror` branch holds data the apps read when the website is out of reach.
