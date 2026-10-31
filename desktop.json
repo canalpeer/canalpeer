@@ -1,0 +1,6 @@
+{
+  "version": "1.3.0",
+  "windows": "https://github.com/canalpeer/canalpeer/releases/download/desktop-v1.3.0/CanalPeer-1.3.0-windows-x64.zip",
+  "windowsExe": "https://github.com/canalpeer/canalpeer/releases/download/desktop-v1.3.0/CanalPeer-1.3.0-windows-x64.exe",
+  "mac": "https://github.com/canalpeer/canalpeer/releases/download/desktop-v1.3.0/CanalPeer-1.3.0-mac.zip"
+}
