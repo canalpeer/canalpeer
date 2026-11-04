@@ -1,5 +1,9 @@
 # What's new in CanalPeer
 
+## 1.5.1 (2026-11-04)
+
+- Android TV and Fire TV: a Paste button next to the box on the first screen. Copy a link, choose Paste and press OK to watch it, without typing it with the remote.
+
 ## 1.5.0 (2026-11-02)
 
 - Android: works on Android 7 and 8 too. Until now it needed Android 9, and older TV boxes said "There was a problem parsing the package".
