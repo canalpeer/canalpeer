@@ -1,6 +1,6 @@
 {
-  "version": "1.5.1",
-  "windows": "https://github.com/canalpeer/canalpeer/releases/download/v1.5.1/CanalPeer-1.5.1-windows-x64.zip",
-  "windowsExe": "https://github.com/canalpeer/canalpeer/releases/download/v1.5.1/CanalPeer-1.5.1-windows-x64.exe",
-  "mac": "https://github.com/canalpeer/canalpeer/releases/download/v1.5.1/CanalPeer-1.5.1-mac.zip"
+  "version": "1.6.0",
+  "windows": "https://github.com/canalpeer/canalpeer/releases/download/v1.6.0/CanalPeer-1.6.0-windows-x64.zip",
+  "windowsExe": "https://github.com/canalpeer/canalpeer/releases/download/v1.6.0/CanalPeer-1.6.0-windows-x64.exe",
+  "mac": "https://github.com/canalpeer/canalpeer/releases/download/v1.6.0/CanalPeer-1.6.0-mac.zip"
 }
