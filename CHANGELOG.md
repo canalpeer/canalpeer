@@ -1,5 +1,9 @@
 # What's new in CanalPeer
 
+## 1.6.1 (2026-11-10)
+
+- Android TV and Fire TV: the mute button in the player can now be reached with the remote. Press down from the play button.
+
 ## 1.6.0 (2026-11-10)
 
 - Recent channels: the first screen lists the last 20 channels you watched on this device. Choose one to watch it again, without pasting the link. Next to each name is the start of its id; press it (or hold it on Android) to copy the full link.
