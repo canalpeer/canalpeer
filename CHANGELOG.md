@@ -1,5 +1,13 @@
 # What's new in CanalPeer
 
+## 1.7.0 (2026-11-26)
+
+- Built-in VPN: it no longer gets stuck after the app has been open for a long time or the device has been asleep. CanalPeer checks the connection before using it and reconnects by itself.
+- Safer playback: when a channel allows it, CanalPeer checks that the video it receives really comes from that channel, and ignores viewers that send something else.
+- Windows, Mac and Linux: updates are now signed, so CanalPeer only installs the ones we publish. If an update cannot be installed by itself, the app offers it as a download.
+- CanalPeer is also available for Linux (x64 and arm64).
+- CanalPeer is now open source. The code is at github.com/pineda89/canalpeer.
+
 ## 1.6.1 (2026-11-10)
 
 - Android TV and Fire TV: the mute button in the player can now be reached with the remote. Press down from the play button.
