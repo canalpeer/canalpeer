@@ -1,8 +1,9 @@
 {
-  "version": "1.6.1",
-  "windows": "https://github.com/canalpeer/canalpeer/releases/download/v1.6.1/CanalPeer-1.6.1-windows-x64.zip",
-  "windowsExe": "https://github.com/canalpeer/canalpeer/releases/download/v1.6.1/CanalPeer-1.6.1-windows-x64.exe",
-  "mac": "https://github.com/canalpeer/canalpeer/releases/download/v1.6.1/CanalPeer-1.6.1-mac.zip",
-  "linuxX64": "https://github.com/canalpeer/canalpeer/releases/download/v1.6.1/CanalPeer-1.6.1-linux-x64.tar.gz",
-  "linuxArm64": "https://github.com/canalpeer/canalpeer/releases/download/v1.6.1/CanalPeer-1.6.1-linux-arm64.tar.gz"
+  "version": "1.7.0",
+  "windows": "https://github.com/pineda89/canalpeer/releases/download/v1.7.0/CanalPeer-1.7.0-windows-x64.zip",
+  "windowsExe": "https://github.com/pineda89/canalpeer/releases/download/v1.7.0/CanalPeer-1.7.0-windows-x64.exe",
+  "mac": "https://github.com/pineda89/canalpeer/releases/download/v1.7.0/CanalPeer-1.7.0-mac.zip",
+  "linuxX64": "https://github.com/pineda89/canalpeer/releases/download/v1.7.0/CanalPeer-1.7.0-linux-x64.tar.gz",
+  "linuxArm64": "https://github.com/pineda89/canalpeer/releases/download/v1.7.0/CanalPeer-1.7.0-linux-arm64.tar.gz",
+  "sig": {"windows": "4r2bXX7i9NiZwMxv/MScZEEtHU9/gcnnMnOdjC24YCV6TZ97GlCouH53BHXFJuCAn05mxfuzIyNIts29nIhOCQ==", "mac": "4MRcOpZHGau0gPkQBwh+cdXc66w2Wxuy/RJ27ynBjBYj9jy0I39sSpOJvldhwt0RlzIIQIu+/QnArgCCE/ZwAw==", "linuxX64": "wmYK7tO3h9TSLZzCQgvoHH280zlRA/h6mPkMVQJ4RAIuHiBdpoEDQKttQndwxAIShXKlW5XHgIxy45EwlskPCQ==", "linuxArm64": "14uOH79dBcMzUmrdIPb3uDgc6Bjhdue+r8QsDS5gjgsxZKfz4ySvvrOxIWLl8haUUVAc/Gc04wX9xAXnO8NYCQ=="}
 }
